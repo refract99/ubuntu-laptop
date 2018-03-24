@@ -1,0 +1,36 @@
+---
+
+  - name: Install Repositories
+      include: install_repos
+
+  - name: Update System
+      include: system_update
+
+  - name: Download Applications
+      include: download_apps
+
+  - name: Install Software
+      include: install_software
+
+  - name: Setup Cloud Services
+      include: setup_cloud
+
+  - name: Restore Files
+      include: restore_files
+
+  - name: General Setup
+      include: general_setup
+
+  - name: Gnome Setup
+      include: gnome_setup
+
+  - name: Configure Applications
+      include: configure_apps
+
+  - name: Configure WINE
+      include: config_wine
+
+  - name: Configure VMWare
+      include: config_vmware
+
+---

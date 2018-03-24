@@ -1,0 +1,62 @@
+---
+
+# Adapta icon theme
+  - apt_repository:
+      repo: ppa:tista/adapta
+      state: present
+
+# Corebird twitter client
+  - apt_repository:
+      repo: ppa:ubuntuhandbook1/corebird
+      state: present
+
+# Google Chrome
+  - apt_repository:
+      repo: deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+      state: present
+      name: google-chrome
+
+# Libre Office
+  - apt_repository:
+      repo: libreoffice/ppa
+      state: present
+
+# nVidia Drivers
+  - apt_repository:
+      repo: ppa:graphics-drivers/ppa
+      state: present
+
+# Papirus theme for Gnome
+  - apt_repository:
+      repo: ppa:papirus/papirus
+      state: present
+
+# Spotify
+  - apt_repository:
+      repo: deb http://repository.spotify.com stable non-free
+      state: present
+
+# Sublime Text
+  - apt_repository: 
+      repo: deb https://download.sublimetext.com/ apt/stable/
+      state: present
+
+#TOR Browser
+  - apt_repository:
+      repo: webupd8team/tor-browser
+      state: present
+
+# Wine
+  - apt_repository:
+      repo: ppa:ubuntu-wine/ppa
+      state: present
+
+# zim
+  - apt_repository:
+      repo: ppa:jaap.karssenberg/zim
+      state: present
+
+---
+
+
+

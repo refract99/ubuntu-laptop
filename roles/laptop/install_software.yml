@@ -1,0 +1,96 @@
+---
+
+  - name: install pre-requisites
+    become: true
+    apt: name="{{ item }}" state=present
+    with_items:
+     - scrot
+     - giblib1
+     - libimlib2
+     - libid3tag0
+     - streamer
+     - xawtv-plugins
+     - mpg123
+     - libout123-0
+     - libportaudio2
+     - libqt5multimedia5-plugins
+     - libgif7
+     - libqgsttools-p1
+     - libqt5multimediawidgets5
+     - libusb-0.1-4
+     - graphviz
+     - gnuplot
+     - python-zeitgeist
+     - gconf-service
+     - gconf-service-backend
+     - libgconf-2-4
+     - libappindicator1
+     - libindicator7
+     - gconf2-common
+     - gir1.2-clutter-1.0
+     - gir1.2-clutter-gst-3.0
+     - gir1.2-gtkclutter-1.0
+     - apt-transport-https
+
+  - name: install utility software
+    become: true
+    apt: name="{{ item }}" state=present
+    with_items:
+     - ufw
+     - preload
+     - nethogs
+     - proftpd-basic
+     - synapse
+     - sublime-text
+     - terminator
+     - htop
+     - powertop
+     - p7zip
+     - unrar
+     - tor-browser
+     - filezilla
+     - sbackup
+     - tlp
+     - tlp-rdw
+     - libdvd-pkg
+     - nvidia-current
+     - dosbox
+     - firejail
+     - openvpn
+     - openconnect
+     - vpnc
+     - network-manager-openvpn-gnome
+     - network-manager-openconnect-gnome
+     - network-manager-vpnc-gnome
+     - gnome-power-manager
+     - cryfs
+     - sirikali
+     - nautilus-dropbox
+     - ubuntu-restricted-extras
+     - chrome-gnome-shell
+     - gnome-tweak-tool
+     - adapta-gtk-theme
+     - papirus-icon-theme
+     - fonts-roboto
+     - wine-stable
+     - winetricks
+     - net-tools
+     - android-file-transfer
+
+  - name: install utility software
+    become: true
+    apt: name="{{ item }}" state=present
+    with_items:
+     - artha
+     - zim
+     - calibre
+     - gourmet
+     - keepassx
+     - wireshark
+     - nmap
+     - zenmap
+     - wifi-radar
+     - vlc
+     - spotify-client
+     - gnucash
+     - corebird
